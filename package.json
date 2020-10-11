@@ -5,12 +5,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "export": "next export",
+    "prettier": "prettier '{components,pages,styles}/**/*.{js,jsx,css}' --ignore-path config/.prettierignore --config config/.prettierrc.js --check",
+    "prettier:fix": "prettier '{components,pages,styles}/**/*.{js,jsx,css}' --ignore-path config/.prettierignore --config config/.prettierrc.js --write"
   },
   "license": "MIT",
   "dependencies": {
     "next": "^9.5.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.2"
   }
 }
