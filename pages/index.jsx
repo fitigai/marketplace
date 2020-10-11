@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
-const IndexPage = (props) => {
-	return <div>Welcome to Next!</div>;
-};
+const IndexPage = () => {
+  return <div>Welcome to Next!</div>
+}
 
-export default IndexPage;
+export default IndexPage
