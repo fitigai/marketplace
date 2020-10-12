@@ -20,5 +20,6 @@ module.exports = {
   rules: {
     'quote-props': ['error', 'as-needed'],
     'react/prop-types': 0,
+    semi: ['error', 'always'],
   },
 }

@@ -6,10 +6,10 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "prettier": "prettier '{components,pages,styles}/**/*.{js,jsx,css}' --ignore-path config/.prettierignore --config config/.prettierrc.js --check",
-    "prettier:fix": "prettier '{components,pages,styles}/**/*.{js,jsx,css}' --ignore-path config/.prettierignore --config config/.prettierrc.js --write",
-    "lint": "eslint '{components,pages}/**/*.{js,jsx}' --ignore-path config/.eslintignore --config config/.eslintrc.js",
-    "lint:fix": "eslint '{components,pages}/**/*.{js,jsx}' --ignore-path config/.eslintignore --config config/.eslintrc.js --fix"
+    "prettier": "prettier '{components,pages,styles}/**/*.{js,jsx,css}' --ignore-path .prettierignore --config .prettierrc.js --check",
+    "prettier:fix": "prettier '{components,pages,styles}/**/*.{js,jsx,css}' --ignore-path .prettierignore --config .prettierrc.js --write",
+    "lint": "eslint '{components,pages}/**/*.{js,jsx}' --ignore-path .eslintignore --config .eslintrc.js",
+    "lint:fix": "eslint '{components,pages}/**/*.{js,jsx}' --ignore-path .eslintignore --config .eslintrc.js --fix"
   },
   "license": "MIT",
   "dependencies": {
