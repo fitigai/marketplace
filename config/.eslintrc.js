@@ -12,7 +12,13 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react'],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
   rules: {
-    'quote-props': ['error', 'always'],
+    'quote-props': ['error', 'as-needed'],
+    'react/prop-types': 0,
   },
 }
