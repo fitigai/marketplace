@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 import { Header, Wrapper } from './style'
 import { Logo } from '../../ui'
@@ -11,7 +12,12 @@ const TopBar = () => {
         <Wrapper>
           <Logo />
           <nav>
-            <a href='/'>Home</a>
+            <Link href='/'>
+              <a>Home</a>
+            </Link>
+            <Link href='/services'>
+              <a>Services</a>
+            </Link>
           </nav>
         </Wrapper>
       </Container>

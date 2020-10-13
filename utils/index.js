@@ -7,4 +7,5 @@
 export const COLOR = {
   ALABASTER: '#fafafa',
   GALLERY: '#eaeaea',
+  MINE_SHAFT: '#222222',
 }
