@@ -1,12 +1,14 @@
 import React from 'react'
+import Link from 'next/link'
+
+import { LogoImage } from './style'
 
 const Logo = () => (
-  <a className='logo' href='/'>
-    <img
-      src='/images/logos/logo.svg'
-      alt='Our professional logo (ideally an svg!)'
-    />
-  </a>
+  <Link href='/'>
+    <a>
+      <LogoImage src='/images/logos/logo.svg' alt='fitigaï logo' />
+    </a>
+  </Link>
 )
 
 export default Logo
