@@ -36,12 +36,12 @@ export default ServicesPage
 
 export async function getStaticProps() {
   // TODO: make the real API call
-  const res = await fetch('http://localhost:3000/data/service.json')
-  const service = await res.json()
+  // const res = await fetch('http://localhost:3000/data/service.json')
+  // const service = await res.json()
 
   return {
     props: {
-      service,
+      service: require('../../data/service.json'),
     },
   }
 }
