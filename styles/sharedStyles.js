@@ -9,4 +9,6 @@ export const Container = styled.div`
 
 export const Main = styled.main`
   flex-grow: 1;
+  width: 100%;
+  overflow: hidden;
 `
