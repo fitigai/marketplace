@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-import { Header, Wrapper } from './style'
+import { Header, Wrapper, Nav } from './style'
 import { Logo } from '../../ui'
 import { Container } from '../../../styles/sharedStyles'
 
@@ -11,14 +11,11 @@ const TopBar = () => {
       <Container>
         <Wrapper>
           <Logo />
-          <nav>
-            <Link href='/'>
-              <a>Home</a>
-            </Link>
+          <Nav>
             <Link href='/services'>
               <a>Services</a>
             </Link>
-          </nav>
+          </Nav>
         </Wrapper>
       </Container>
     </Header>

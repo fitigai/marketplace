@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import { Heading, Text } from '../../ui'
 
@@ -11,6 +12,9 @@ const ServiceDescription = ({ title, description }) => {
   )
 }
 
-ServiceDescription.propTypes = {}
+ServiceDescription.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+}
 
 export default ServiceDescription

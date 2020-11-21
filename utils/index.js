@@ -9,3 +9,5 @@ export const COLOR = {
   GALLERY: '#eaeaea',
   MINE_SHAFT: '#222222',
 }
+
+export const ASSETS_PREFIX = process.env.NEXT_PUBLIC_BASE_PATH || ''

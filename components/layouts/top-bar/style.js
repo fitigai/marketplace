@@ -17,3 +17,22 @@ export const Wrapper = styled.div`
   align-items: center;
   background-color: white;
 `
+
+export const Nav = styled.nav`
+  display: flex;
+  height: 100%;
+
+  > a {
+    text-decoration: none;
+    color: ${COLOR.MINE_SHAFT};
+    font-weight: bold;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 10px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+`

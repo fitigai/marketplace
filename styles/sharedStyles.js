@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 
 // TODO: convert those breakpoint to variables
@@ -6,12 +7,17 @@ import styled from 'styled-components'
 // 744px
 // 375px
 
-export const Container = styled.div`
+export const Container = styled(({ zIndex, ...props }) => <div {...props} />)`
   width: 100%;
   max-width: 1440px;
   padding: 0 20px;
   margin: 0 auto;
+  z-index: ${({ zIndex }) => zIndex};
 `
+
+Container.defaultProps = {
+  zIndex: 0,
+}
 
 export const Main = styled.main`
   flex-grow: 1;

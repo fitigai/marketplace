@@ -1,9 +1,10 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import { Container } from './style'
-import { Heading, Text } from '../../ui'
+import { Text } from '../../ui'
 
-const ServiceOwnerInfo = ({ name, avatar }) => {
+const ServiceOwnerInfo = ({ name }) => {
   return (
     <Container>
       <Text>{name}</Text>
@@ -11,6 +12,8 @@ const ServiceOwnerInfo = ({ name, avatar }) => {
   )
 }
 
-ServiceOwnerInfo.propTypes = {}
+ServiceOwnerInfo.propTypes = {
+  name: PropTypes.string,
+}
 
 export default ServiceOwnerInfo
