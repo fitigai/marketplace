@@ -8,7 +8,7 @@ export const HomeHeaderContainer = styled(({ backgroundImage, ...props }) => (
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  height: calc(100vh - 65px);
+  min-height: calc(100vh - 65px);
   display: flex;
   align-items: center;
 `
@@ -41,7 +41,7 @@ export const Content = styled.div`
   padding-left: 100px;
 
   > h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     color: white;
     margin-bottom: 30px;
   }
@@ -49,5 +49,6 @@ export const Content = styled.div`
   > p {
     color: white;
     max-width: 450px;
+    font-size: 1.2rem;
   }
 `

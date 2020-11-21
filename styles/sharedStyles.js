@@ -22,7 +22,6 @@ Container.defaultProps = {
 export const Main = styled.main`
   flex-grow: 1;
   width: 100%;
-  overflow: hidden;
 `
 
 export const ContainerWidthColumn = styled.div`
