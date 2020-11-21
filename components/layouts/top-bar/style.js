@@ -3,8 +3,9 @@ import styled from 'styled-components'
 import { COLOR } from '../../../utils'
 
 export const Header = styled.header`
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100vw;
   border-bottom: 1px solid ${COLOR.GALLERY};
   z-index: 10;
   background-color: white;

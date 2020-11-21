@@ -1,12 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 
-// TODO: convert those breakpoint to variables
-// 1128px
-// 950px
-// 744px
-// 375px
-
 export const Container = styled(({ zIndex, ...props }) => <div {...props} />)`
   width: 100%;
   max-width: 1440px;

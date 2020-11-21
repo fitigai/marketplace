@@ -11,3 +11,17 @@ export const COLOR = {
 }
 
 export const ASSETS_PREFIX = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
+export const BREAKPOINT = {
+  XL: '1128px',
+  L: '950px',
+  M: '744px',
+  S: '375px',
+}
+
+export const MEDIA_QUERY = {
+  WIDE_AND_UP: `only screen and (min-width: ${BREAKPOINT.XL})`,
+  WIDE_AND_DOWN: `only screen and (max-width: ${BREAKPOINT.XL})`,
+  MEDIUM_AND_DOWN: `only screen and (max-width: ${BREAKPOINT.M})`,
+  SMALL_AND_DOWN: `only screen and (max-width: ${BREAKPOINT.S})`,
+}

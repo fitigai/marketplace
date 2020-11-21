@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { MEDIA_QUERY } from '../../../utils'
+
 export const HomeHeaderContainer = styled(({ backgroundImage, ...props }) => (
   <section {...props} />
 ))`
@@ -40,15 +42,27 @@ export const Content = styled.div`
   justify-content: center;
   padding-left: 100px;
 
+  @media ${MEDIA_QUERY.MEDIUM_AND_DOWN} {
+    padding-left: 0;
+  }
+
   > h1 {
     font-size: 5rem;
     color: white;
     margin-bottom: 30px;
+
+    @media ${MEDIA_QUERY.MEDIUM_AND_DOWN} {
+      font-size: 3.5rem;
+    }
   }
 
   > p {
     color: white;
     max-width: 450px;
     font-size: 1.2rem;
+
+    @media ${MEDIA_QUERY.MEDIUM_AND_DOWN} {
+      font-size: 1rem;
+    }
   }
 `
