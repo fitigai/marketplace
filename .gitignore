@@ -3,3 +3,7 @@ node_modules
 # Next folders
 .next
 out
+
+# Env
+.env.*
+!.env.sample

@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Header, Wrapper, Nav } from './style'
 import { Logo } from '../../ui'
 import { Container } from '../../../styles/sharedStyles'
+import { APP_URL } from '../../../utils'
 
 const TopBar = () => {
   return (
@@ -12,8 +13,8 @@ const TopBar = () => {
         <Wrapper>
           <Logo />
           <Nav>
-            <Link href='/services'>
-              <a>Services</a>
+            <Link href={APP_URL}>
+              <a>Login</a>
             </Link>
           </Nav>
         </Wrapper>
