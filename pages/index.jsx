@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Main } from '../styles/sharedStyles'
+import Head from '../components/layouts/head'
 import TopBar from '../components/layouts/top-bar'
 import Footer from '../components/layouts/footer'
 import HomeHeader from '../components/sections/home-header'
@@ -8,6 +9,7 @@ import ShortDescription from '../components/sections/short-description'
 
 const IndexPage = () => (
   <>
+    <Head />
     <TopBar />
     <Main>
       <HomeHeader />
