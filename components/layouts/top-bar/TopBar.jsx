@@ -14,7 +14,7 @@ const TopBar = () => {
           <Logo />
           <Nav>
             <Link href={APP_URL}>
-              <a>Login</a>
+              <a data-track='topbar-login'>Login</a>
             </Link>
           </Nav>
         </Wrapper>
